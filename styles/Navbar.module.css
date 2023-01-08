@@ -2,7 +2,7 @@
     display: flex;
     padding-top: 0.5em;
     flex-direction: column;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .navbarDisplay{
@@ -22,7 +22,7 @@
     100% {opacity: 1;}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .navbarDisplay{
         justify-content: space-around;
     }
@@ -61,7 +61,7 @@
     }
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 993px){
     .navbar li{
         padding: 1em;
         border-radius: 2%;

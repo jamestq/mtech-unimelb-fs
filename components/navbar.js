@@ -40,11 +40,11 @@ export default function Navbar({pages, screenSize, windowWidth}){
                     priority
                     />
                 </Link>
-                {windowWidth>=screenSize.xs? 
+                {windowWidth>screenSize.sm? 
                     getNavLinks() : 
                     <button onClick={changeBurgerStatus}>
                         <Image
-                        src={burgerIcon}
+                        src={burgerIcon}    
                         width={40}
                         height={30}
                         alt="burger-nav"
@@ -54,7 +54,7 @@ export default function Navbar({pages, screenSize, windowWidth}){
                     </button>
                 }
             </div>
-            {!burgerClosed && windowWidth<=screenSize.xs &&
+            {!burgerClosed && windowWidth<=screenSize.sm &&
                 <div className={styles.burgerDisplay}>
                     {getNavLinks()}
                 </div>

@@ -1,0 +1,29 @@
+.bannerGrid{
+    display: grid;
+    max-width: 100%;
+    row-gap: 1em;
+    padding-top: 2em;
+    /* border: 1px solid yellow; */
+}
+
+.gridItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    row-gap: 1em;
+    padding: 0 0.5em;
+    text-align: center;
+}
+
+.gridItem h1{
+    font-weight: bold;
+}
+
+.gridItem img{
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}

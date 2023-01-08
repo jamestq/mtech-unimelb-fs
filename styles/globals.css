@@ -45,8 +45,8 @@ body {
 
 body {
   background: var(--bg-color-main);
-	font-family: 'Kanit', sans-serif;
-	color: var(--font-color-main);
+  font-family: 'Kanit', sans-serif;
+  color: var(--font-color-main);
 }
 
 article, aside, details, figcaption, figure, 
