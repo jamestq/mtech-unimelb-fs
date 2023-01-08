@@ -1,0 +1,76 @@
+.navbar{
+    display: flex;
+    padding-top: 0.5em;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+.navbarDisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6em;
+}
+
+.navbar ul{
+    display: flex;
+    column-gap: 3em;
+}
+
+@keyframes fadein {
+    0% {opacity: 0}
+    100% {opacity: 1;}
+}
+
+@media screen and (max-width: 768px) {
+    .navbarDisplay{
+        justify-content: space-around;
+    }
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar li {
+        padding: 0.5em;
+    }
+    
+    .navbar li:hover{
+        background-color: var(--font-color-main);
+        color: var(--bg-color-main);
+        animation-name: fadein;
+        animation-duration: var(--animation-duration-faster);
+    }
+
+    .burgerDisplay{
+        margin: 0.5em 0;
+        background-color: var(--bg-color-1);
+        animation-name: fadein;
+        animation-duration: var(--animation-duration-faster);
+    }
+
+    .navbar button{
+        background-color: var(--font-color-main);
+        border: none;
+        border-radius: 5%;
+    }
+
+    .burger{
+        border: none;
+        background: transparent;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .navbar li{
+        padding: 1em;
+        border-radius: 2%;
+    }
+
+    .navbar li:hover{
+        background-color: var(--font-color-main);
+        color: var(--bg-color-main);
+        animation-name: fadein;
+        animation-duration: var(--animation-duration-faster);
+    }
+}
