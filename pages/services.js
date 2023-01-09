@@ -27,7 +27,7 @@ const services = [
           "Networking events are held once every semester. Industry partners and club members have to opportunity to share ideas and network",
       ],
       details: [
-        <Image src={networkPhoto} alt="photo of a networking event"/>,
+        <Image src={networkPhoto} key={networkPhoto} alt="photo of a networking event"/>,
       ],
       withImage: true
   }
@@ -41,7 +41,7 @@ export default function Services({pages, screenSize, windowWidth}){
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/mtech-logo.svg" />
     </Head>
-    {services.map(service => <Service {...{service}}/>)}
+    {services.map(service => <Service key={service.title} {...{service}}/>)}
     <Form/>
     </Layout>
 }

@@ -19,18 +19,18 @@ export default function Service({service}){
     function displayDescription(){
         return <div className={styles.descriptionContainer}>
             <h2>{service.title}</h2>
-            {service.description.map(description => <p>{description}</p>)}
+            {service.description.map(description => <p key={description}>{description}</p>)}
         </div>
     }
 
     function displayDetails(withImage){
         if(withImage){
             return <div className={styles.detailContainer}>
-                {service.details.map(detail => <div className={styles.detailImage}>{detail}</div>)}
+                {service.details.map(detail => <div key={detail} className={styles.detailImage}>{detail}</div>)}
             </div>
         }else{
             return <div className={styles.detailContainer}>
-                {service.details.map(detail => <div className={styles.detailItem}>{detail}</div>)}
+                {service.details.map(detail => <div key={detail} className={styles.detailItem}>{detail}</div>)}
             </div>
         }
     }
