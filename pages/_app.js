@@ -3,10 +3,10 @@ import '../styles/globals.css'
 
 const pages = {
   "Home": "/",
-  "Our Team": "about",
-  "Services": "services",
-  "Events": "events",
-  "Join Us": "contact"
+  "Our Team": "/about",
+  "Services": "/services",
+  "Events": "/events",
+  "Join Us": "/contact"
 }
 
 const screenSize = {

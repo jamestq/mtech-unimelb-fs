@@ -39,13 +39,11 @@ export default function Home({pages, screenSize, windowWidth}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/mtech-logo.svg" />
       </Head>
-      <main className={styles.main}>
-        <Banner content={bannerContent}/>
-        <Presentation content={missionStatement}/>
-        <Link href={"/services"} className={styles.link}>
-            Learn More
-        </Link>
-      </main>
+      <Banner content={bannerContent}/>
+      <Presentation content={missionStatement}/>
+      <Link href={pages["Events"]} className={styles.link}>
+          Learn More
+      </Link>
     </Layout>
   )
 }
