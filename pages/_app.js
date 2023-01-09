@@ -6,7 +6,7 @@ const pages = {
   "Our Team": "/about",
   "Services": "/services",
   "Events": "/events",
-  "Join Us": "/contact"
+  "Join Us": "/recruit"
 }
 
 const screenSize = {

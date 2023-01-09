@@ -4,7 +4,7 @@ import JobPost from '../components/jobpost';
 
 import loadPositions from '../utility/loadPositions'
 
-import styles from "../styles/Contact.module.css"
+import styles from "../styles/Recruit.module.css"
 
 export async function getServerSideProps(){
   const positions = await loadPositions();
@@ -13,7 +13,7 @@ export async function getServerSideProps(){
   }
 }
 
-export default function Contact({pages, screenSize, windowWidth, positions}){
+export default function Recruit({pages, screenSize, windowWidth, positions}){
     return <Layout {...{pages, screenSize, windowWidth}}>
       <Head>
         <title>MTech Consulting</title>
