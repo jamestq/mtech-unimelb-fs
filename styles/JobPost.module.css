@@ -1,0 +1,34 @@
+.post{
+    background-color: var(--bg-color-3);
+    border-radius: 2%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    padding: 1em;
+}
+
+.post ul{
+    display: flex;
+    flex-direction: column;
+    list-style: circle;
+    padding-left: 2em
+}
+
+.post a {
+    color: var(--bg-color-3);
+    background-color: var(--font-color-main);
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5em 0.5em;
+    margin: 0 4em;
+}
+
+@media screen and (max-width: 768px){
+    .post{
+        width: 80%;
+    }
+}
+
