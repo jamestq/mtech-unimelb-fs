@@ -1,0 +1,40 @@
+.yearGroup{
+    width: 95%;
+}
+
+.monthGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2em;
+    row-gap: 1em;
+}
+
+.eventItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    max-width: 100%;
+    /* border: 1px green solid; */
+    text-align: center;
+    row-gap: 0.5em;
+    margin-bottom: 3em;
+}
+
+.eventItem a{
+    text-decoration: none;
+    color: var(--font-color-main);
+    background: var(--bg-color-1);
+    padding: 1em;
+    border-radius: 2%;
+}
+
+.eventItem img{
+    display: block;
+    max-width: 80%;
+    width: auto;
+    height: auto;
+}

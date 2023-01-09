@@ -5,6 +5,8 @@ import mtechNetwork from "../assets/event-photo/mtech-networking-18NOV2022.png";
 import mtechQR from "../assets/event-photo/mtechqr-seminar-22NOV2022.png";
 import Image from "next/image";
 
+import styles from "../styles/EventItem.module.css";
+
 const months = {
     1 : "January", 2 : "February", 3 : "March", 4 : "April", 
     5 : "May", 6 : "June", 7 : "July", 8 : "August",
@@ -84,16 +86,16 @@ function displayLoad(eventList, monthYearSet){
 function generateYearDisplay(year, monthSet, eventList){
     const monthArray = [];
     monthSet.forEach(month => monthArray.push(generateMonthDisplay(month, year, eventList)));
-    return <div key={year} className="year-group">
-        <h2 className="time-title">{year}</h2>
+    return <div key={year} className={styles.yearGroup}>
+        <h2 className={styles.timeTitle}>{year}</h2>
         <hr/>
         {monthArray}
     </div>
 }
 
 function generateMonthDisplay(month, year, eventList){
-    return <div key={year.toString() + "-" + month.toString()} className="month-group">
-        <h2 className="time-title">{months[month]}</h2>
+    return <div key={year.toString() + "-" + month.toString()} className={styles.monthGroup}>
+        <h2 className={styles.timeTitle}>{months[month]}</h2>
         {eventList
         .filter(event => filterEventDates(event, month, year))
         .map(event => generateDateDisplay(event))
@@ -108,7 +110,7 @@ function filterEventDates(event, month, year){
 }
 
 function generateDateDisplay(event){
-    return <div key={event.title} className="event-item">
+    return <div key={event.title} className={styles.eventItem}>
         <Image
         src={event.image}
         alt={event.title}

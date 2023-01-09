@@ -4,6 +4,9 @@ import { useEffect, useState } from 'react';
 import Layout from '../components/layout'
 import {loadEvents, generateMonthYearSet, displayLoad} from '../utility/loadEvents'
 
+import styles from '../styles/Events.module.css';
+// import 'react-calendar/dist/Calendar.css';
+
 export async function getServerSideProps(){
   const eventList = await loadEvents();
   return {
@@ -68,23 +71,20 @@ export default function Events({pages, screenSize, windowWidth, eventList}){
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/mtech-logo.svg" />
     </Head>
-    <div className="events-page">
+    <div className={styles.page}>
         <h1>Events Calendar</h1>
-        <div className="button-panel">
-            <button className="interactive-button" 
-              onClick={() => handleDateChange("reset")}
-            >
+        <div className={styles.buttonPanel}>
+            <button onClick={() => handleDateChange("reset")}>
               Reset Event List Filter
             </button>
         </div>
-        <div className="calendar">
-            <Calendar 
-              onClickDay={(event) => handleDateChange(event)} 
-              value={currentDate} 
-              showNeighboringMonth={false}
-            />
-        </div>
-        <div className="events-list">
+          <Calendar 
+            onClickDay={(event) => handleDateChange(event)} 
+            value={currentDate} 
+            showNeighboringMonth={false}
+            className={styles.calendar}
+          />
+        <div className={styles.eventList}>
             {displayJSX}
         </div>
     </div>
