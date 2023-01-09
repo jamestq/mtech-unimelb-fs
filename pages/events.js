@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import {loadEvents, generateMonthYearSet, displayLoad} from '../utility/loadEvents'
 
 import styles from '../styles/Events.module.css';
-// import 'react-calendar/dist/Calendar.css';
+import 'react-calendar/dist/Calendar.css';
 
 export async function getServerSideProps(){
   const eventList = await loadEvents();
