@@ -6,7 +6,6 @@
 }
 
 .form iframe{
-  min-height: 900px;
   width: 100%;
   min-width: 320px;
 }
@@ -17,11 +16,5 @@
   }
 }
 
-@media screen and (min-width: 992px) {
-  .form iframe{
-    width: 100%;
-    min-width: 320px;
-    min-height: 400px;
-  }
-}
+
  

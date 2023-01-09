@@ -44,7 +44,7 @@
 
     .burgerDisplay{
         margin: 0.5em 0;
-        background-color: var(--bg-color-1);
+        background-color: var(--bg-color-3);
         animation-name: fadein;
         animation-duration: var(--animation-duration-faster);
     }

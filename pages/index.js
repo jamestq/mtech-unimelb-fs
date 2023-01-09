@@ -41,7 +41,7 @@ export default function Home({pages, screenSize, windowWidth}) {
       </Head>
       <Banner content={bannerContent}/>
       <Presentation content={missionStatement}/>
-      <Link href={pages["Events"]} className={styles.link}>
+      <Link href={pages["Our Team"]} className={styles.link}>
           Learn More
       </Link>
     </Layout>

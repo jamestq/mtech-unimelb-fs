@@ -33,11 +33,12 @@ const socialMedia = [
 
 export default function Footer(){
     return <div className={styles.footer}>
-        {socialMedia.map(social => <Link href={social.link}>
+        {socialMedia.map(social => <Link key={social.link} href={social.link}>
             <Image
             src={social.icon}
             width={30}
             height={30}
+            alt={social.type}
             />
         </Link>)}
     </div>
