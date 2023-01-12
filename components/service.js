@@ -1,6 +1,6 @@
 import styles from "../styles/Service.module.css";
 
-export default function Service({service}){
+export default function Service({service, showProjects}){
 
     function displayContainer(withImage){
         if(withImage){
@@ -19,20 +19,24 @@ export default function Service({service}){
     function displayDescription(){
         return <div className={styles.descriptionContainer}>
             <h2>{service.title}</h2>
-            {service.description.map(description => <p key={description}>{description}</p>)}
+            <div className={styles.description}>
+                <div className={styles.desParagraph}>
+                    {service.description.map(description => <p key={description}>{description}</p>)}
+                </div>
+                {displayButton()}
+            </div>
         </div>
     }
 
     function displayDetails(withImage){
-        if(withImage){
-            return <div className={styles.detailContainer}>
-                {service.details.map(detail => <div key={detail} className={styles.detailImage}>{detail}</div>)}
-            </div>
-        }else{
-            return <div className={styles.detailContainer}>
-                {service.details.map(detail => <div key={detail} className={styles.detailItem}>{detail}</div>)}
-            </div>
-        }
+        const style = withImage? styles.detailImage : styles.detailItem;
+        return <div className={styles.detailContainer}>
+            {service.details.map(detail => <div key={detail} className={style}>{detail}</div>)}
+        </div>
+    }
+
+    function displayButton(){
+        return <button onClick={() => showProjects(service.type)}>Show {service.title}</button>
     }
 
     return <div className={styles.container}>

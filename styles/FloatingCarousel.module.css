@@ -1,0 +1,79 @@
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 5em;
+    border: 0.5em solid var(--font-color-main);
+    border-radius: 5%;
+    background-image: url('../assets/event-photo/tech-background.jpg');
+}
+
+.slider{
+    position: relative;
+    height: 100%;
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.slider button{
+    position: absolute;
+    background: none;
+    color: inherit;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#previous{
+    top: 50%;
+    left: 5px;
+}
+
+.slideContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.slide{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 1.5em;
+    width: 90%;
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+@media screen and (max-width: 500px) {
+    #close{
+        top: 5px;
+        left: 90%;
+    }
+    
+    #next{
+        top: 50%;
+        left: 95%;
+    }
+
+}
+
+@media screen and (min-width: 501px) {
+    #close{
+        top: 5px;
+        left: 97%;
+    }
+    
+    #next{
+        top: 50%;
+        left: 98%;
+    }
+    
+}

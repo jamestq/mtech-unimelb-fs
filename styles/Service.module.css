@@ -16,6 +16,35 @@
     /* border: 1px solid green; */
 }
 
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5em;
+}
+
+.descriptionContainer button{
+    color: inherit;
+    padding: 1em;
+    background-color: var(--bg-color-1);
+    border: none;
+    border-radius: 5%;
+    width: 50%;
+}
+
+.descriptionContainer button:hover{
+    cursor: pointer;
+    background-color: var(--font-color-main);
+    color: var(--bg-color-1);
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 .detailContainer{
     display: flex;
     flex-direction: column;
