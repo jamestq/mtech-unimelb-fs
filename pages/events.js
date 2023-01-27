@@ -74,7 +74,10 @@ export default function Events({pages, screenSize, windowWidth, eventList}){
     </Head>
     <div className={styles.page}>
         <button id={styles.filter} onClick={() => setShowCalendar(!showCalendar)}>Filter Events</button>
-        {showCalendar && <Calendar/>}
+        {showCalendar && <>
+          <button id={styles.reset} onClick={() => handleDateChange("reset")}>Reset Calendar</button>
+          <Calendar onClickDay={(value) => handleDateChange(value)}/>
+        </>}
         <div className={styles.eventList}>
             {displayJSX}
         </div>

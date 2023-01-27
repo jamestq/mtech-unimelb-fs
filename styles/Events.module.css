@@ -19,5 +19,12 @@
     border-radius: 2%;
 }
 
+#reset{
+    padding: 0.5em;
+    font: inherit;
+    cursor: pointer;
+    border-radius: 2%;
+}
+
 
 
