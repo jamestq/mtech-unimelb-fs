@@ -4,6 +4,19 @@
     height: 100%;
     /* border: 1px red solid; */
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#filter{
+    padding: 1em;
+    text-transform: uppercase;
+    font: inherit;
+    color: var(--font-color-main);
+    background-color: var(--bg-color-3);
+    cursor: pointer;
+    border-radius: 2%;
 }
 
 

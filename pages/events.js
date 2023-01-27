@@ -20,6 +20,7 @@ export default function Events({pages, screenSize, windowWidth, eventList}){
   const [monthYearSet, setMonthYearSet] = useState({});
   const [displayJSX, setDisplayJSX] = useState([]);
   const [currentDate, setCurrentDate] = useState(new Date());
+  const [showCalendar, setShowCalendar] = useState(false);
 
   useEffect(() => {
     const newList = eventList.map(event => ({...event, date: (new Date(event.date))}))
@@ -72,6 +73,8 @@ export default function Events({pages, screenSize, windowWidth, eventList}){
       <link rel="icon" href="/mtech-logo.svg" />
     </Head>
     <div className={styles.page}>
+        <button id={styles.filter} onClick={() => setShowCalendar(!showCalendar)}>Filter Events</button>
+        {showCalendar && <Calendar/>}
         <div className={styles.eventList}>
             {displayJSX}
         </div>

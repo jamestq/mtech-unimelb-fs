@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     row-gap: 2.5em;
-    margin: 1em;
+    margin: 1em 1em 5em 1em;
     /* border: 1px yellow solid; */
     animation-name: fadein;
     animation-duration: var(--animation-duration-default);
