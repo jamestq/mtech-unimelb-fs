@@ -94,7 +94,6 @@ export default function Services({pages, screenSize, windowWidth}){
     </Head>
       <div className={styles.container}>
         {services.map(service => <Service key={service.title} {...{service, showProjects}}/>)}
-        {/* {showfloatElement && <FloatingCarousel {...{projectList, closeProject}}/>} */}
       </div>
     <Form/>
     </Layout>

@@ -23,7 +23,7 @@ export default function Service({service, showProjects}){
                 <div className={styles.desParagraph}>
                     {service.description.map(description => <p key={description}>{description}</p>)}
                 </div>
-                {displayButton()}
+                {/* {displayButton()} */}
             </div>
         </div>
     }
