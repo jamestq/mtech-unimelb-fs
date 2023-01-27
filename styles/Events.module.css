@@ -4,7 +4,7 @@
     align-items: center;
     row-gap: 1.5em;
     width: 100%;
-    /* border: 1px red solid; */
+    border: 1px red solid;
 }
 
 .buttonPanel{
