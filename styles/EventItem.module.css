@@ -1,5 +1,9 @@
 .yearGroup{
-    width: 95%;
+    /* border: 1px solid purple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* row-gap: 1em; */
 }
 
 .monthGroup{
@@ -7,21 +11,30 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 2em;
-    row-gap: 1em;
+    /* border: 1px solid yellow; */
+    /* row-gap: 1em; */
 }
 
 .eventItem{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 30% 60%;
     justify-content: center;
-    width: 70%;
-    max-width: 100%;
+    column-gap: 1em;
+    width: 50%;
     /* border: 1px green solid; */
     text-align: center;
-    row-gap: 0.5em;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: rgb(31, 23, 139);
+    border-radius: 1%;
+}
+
+.eventItemDes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1em;
+    text-align: left;
 }
 
 .eventItem a{
@@ -30,11 +43,29 @@
     background: var(--bg-color-1);
     padding: 1em;
     border-radius: 2%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
 }
 
 .eventItem img{
     display: block;
-    max-width: 80%;
-    width: auto;
+    max-width: 100%;
     height: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .eventItem{
+        grid-template-columns: 100%;
+        row-gap: 1em;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+    .eventItem{
+        width: 80%;
+    }
+
 }

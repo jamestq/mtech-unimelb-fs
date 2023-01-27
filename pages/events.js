@@ -72,21 +72,9 @@ export default function Events({pages, screenSize, windowWidth, eventList}){
       <link rel="icon" href="/mtech-logo.svg" />
     </Head>
     <div className={styles.page}>
-        {/* <h1>Events Calendar</h1>
-        <div className={styles.buttonPanel}>
-            <button onClick={() => handleDateChange("reset")}>
-              Reset Event List Filter
-            </button>
-        </div>
-          <Calendar 
-            onClickDay={(event) => handleDateChange(event)} 
-            value={currentDate} 
-            showNeighboringMonth={false}
-            className={styles.calendar}
-          />
         <div className={styles.eventList}>
             {displayJSX}
-        </div> */}
+        </div>
     </div>
   </Layout>
 }

@@ -87,15 +87,14 @@ function generateYearDisplay(year, monthSet, eventList){
     const monthArray = [];
     monthSet.forEach(month => monthArray.push(generateMonthDisplay(month, year, eventList)));
     return <div key={year} className={styles.yearGroup}>
-        <h2 className={styles.timeTitle}>{year}</h2>
-        <hr/>
+        {/* <h2 className={styles.timeTitle}>{year}</h2> */}
         {monthArray}
     </div>
 }
 
 function generateMonthDisplay(month, year, eventList){
     return <div key={year.toString() + "-" + month.toString()} className={styles.monthGroup}>
-        <h2 className={styles.timeTitle}>{months[month]}</h2>
+        {/* <h2 className={styles.timeTitle}>{months[month]}</h2> */}
         {eventList
         .filter(event => filterEventDates(event, month, year))
         .map(event => generateDateDisplay(event))
@@ -111,13 +110,18 @@ function filterEventDates(event, month, year){
 
 function generateDateDisplay(event){
     return <div key={event.title} className={styles.eventItem}>
-        <Image
-        src={event.image}
-        alt={event.title}
-        />
-        <h2>{event.title}</h2>
-        <p>{event.description}</p>
-        <a href={event.link}>Register Here</a>
+        <div>
+            <Image
+            src={event.image}
+            alt={event.title}
+            />
+        </div>
+        <div className={styles.eventItemDes}>
+            <h2>{event.title}</h2>
+            <p>{event.date.toLocaleDateString()}</p>
+            <p>{event.description}</p>
+            <a href={event.link}>Register Here</a>
+        </div>
     </div>
 }
 
