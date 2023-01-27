@@ -24,7 +24,7 @@ export default function FloatingCarousel({projectList, closeProject}){
     }, [currentProjectIndex])
 
     return <div className={styles.container}>
-        <div className={styles.slider} style={{backgroundImage: `url(${backgroundImage})`}}>
+        {/* <div className={styles.slider} style={{backgroundImage: `url(${backgroundImage})`}}>
             <button onClick={closeProject} id={styles.close}>X</button>
             <button onClick={() => nextProject(1)} id={styles.next}>{">"}</button>
             <button onClick={() => nextProject(-1)} id={styles.previous}>{"<"}</button>
@@ -34,6 +34,6 @@ export default function FloatingCarousel({projectList, closeProject}){
                     {(currentProject.description.length !== 0) && currentProject.description.map(description => <p>{description}</p>)}
                 </div>
             </div>
-        </div>
+        </div> */}
     </div>
 }
