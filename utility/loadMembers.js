@@ -19,14 +19,14 @@ const memberList = [
             },
             {
                 name: "Kezia Rebecca Pranata",
-                position: "VP of Operations",
+                position: "Vice President",
                 photo: vpOps,
             },
-            {
-                name: "Monish Manikanda",
-                position: "VP of Consulting",
-                photo: vpCon,
-            },
+            // {
+            //     name: "Monish Manikanda",
+            //     position: "VP of Consulting",
+            //     photo: vpCon,
+            // },
             {
                 name: "Jiayi Shi",
                 position: "Education Officer",

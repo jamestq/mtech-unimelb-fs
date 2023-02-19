@@ -13,17 +13,18 @@
     align-items: center;
     width: 100%;
     row-gap: 1em;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .members{
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     column-gap: 3%;
     row-gap: 1.5em;
     width: 100%;
-    /* border: 1px solid orange; */
+    border: 1px solid orange;
 }
 
 .memberItem{
@@ -31,7 +32,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    row-gap: 0.5em;
+    row-gap: 1em;
+    width: 30%;
 }
 
 .memberItem img{
@@ -45,6 +47,10 @@
     .members{
         display: grid;
         grid-template-columns: 100%;
+    }
+
+    .memberItem{
+        width: 100%;
     }
 }
 
