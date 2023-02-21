@@ -39,6 +39,7 @@
 .memberItem img{
     display: block;
     max-height: 150px;
+    max-width: 100%;
     width: auto;
     border-radius: 10%;
 }
