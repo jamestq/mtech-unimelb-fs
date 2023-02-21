@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import Layout from '../components/layout'
 import Banner from '../components/banner'
 import Presentation from '../components/presentation'
-
+import Sponsors from '../components/sponsors'
 import connectIcon from '../assets/icons/connect.svg';
 import project from '../assets/icons/project.svg'
 
@@ -41,6 +41,7 @@ export default function Home({pages, screenSize, windowWidth}) {
       </Head>
       <Banner content={bannerContent}/>
       <Presentation content={missionStatement}/>
+      <Sponsors/>
       <Link href={pages["Our Team"]} className={styles.link}>
           Learn More
       </Link>

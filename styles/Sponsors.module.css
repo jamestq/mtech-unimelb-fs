@@ -1,0 +1,6 @@
+.container{
+    background-color: var(--bg-color-4);
+    width: 50%;
+    text-align: center;
+    padding: 1em;
+}
