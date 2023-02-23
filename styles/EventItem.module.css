@@ -25,7 +25,7 @@
     text-align: center;
     margin-bottom: 1em;
     padding: 1em;
-    background-color: rgb(31, 23, 139);
+    background-color: var(--bg-color-5);
     border-radius: 1%;
 }
 

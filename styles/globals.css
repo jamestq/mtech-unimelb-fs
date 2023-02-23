@@ -5,6 +5,7 @@
 	--bg-color-2: rgb(3, 63, 133);
 	--bg-color-3: rgb(3,63,160);
 	--bg-color-4: rgb(4, 60, 124);
+	--bg-color-5: rgb(3, 48, 99);
 	--bg-color-main: var(--bg-color-2);
 	--font-color-main: #d3ebff;
 	--animation-duration-default: 1.5s;
