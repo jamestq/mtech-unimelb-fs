@@ -4,3 +4,37 @@
     text-align: center;
     padding: 1em;
 }
+
+.sponsorContainer{
+    margin-top: 1.5em;
+    width: 100%;
+    /* border: red solid 1px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logoContainer{
+    border: green solid 2px;
+    width: 35%;
+}
+
+.logoContainer img{
+    display: block;
+    max-height: 150px;
+    width: auto;
+    background-color: white;
+    border-radius: 2%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 90%;
+    }
+
+    .logoContainer{
+        width: 40%;
+    }
+
+}
