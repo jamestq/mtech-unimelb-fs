@@ -21,10 +21,10 @@ export default function Sponsors(){
         <div className={styles.sponsorContainer}>
             {
                 sponsors.map(sponsor => {
-                    return <div className={styles.logoContainer}>
+                    return <div className={styles.logoContainer} key={sponsor.title}>
                             <Image 
-                            key={sponsor.title}
                             src={sponsor.image}
+                            alt={sponsor.title}
                             />
                     </div>
                 })
