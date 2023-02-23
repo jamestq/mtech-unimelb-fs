@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import eyLogo from '../assets/ey.png';
 import qrLogo from '../assets/quickrelease.png';
+import umsuLogo from '../assets/umsu.png';
 
 const sponsors = [
     {
@@ -12,6 +13,10 @@ const sponsors = [
     {
         title: "Quick Release",
         image: qrLogo,
+    },
+    {
+        title: "UMSU",
+        image: umsuLogo
     }
 ]
 

@@ -2,21 +2,25 @@
     background-color: var(--bg-color-4);
     width: 50%;
     text-align: center;
-    padding: 1em;
+    padding: 2.5em 0.5em;
 }
 
 .sponsorContainer{
-    margin-top: 1.5em;
+    margin-top: 2em;
     width: 100%;
     /* border: red solid 1px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    row-gap: 2em;
+    column-gap: 2em;
 }
 
 .logoContainer{
-    border: green solid 2px;
-    width: 35%;
+    /* border: green solid 2px; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
 .logoContainer img{
@@ -25,7 +29,6 @@
     width: auto;
     background-color: white;
     border-radius: 2%;
-    margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
@@ -34,7 +37,27 @@
     }
 
     .logoContainer{
-        width: 40%;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sponsorContainer{
+        margin-top: 1.5em;
+        width: 100%;
+        /* border: red solid 1px; */
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
     }
 
+    .logoContainer{
+        width: 100%;
+    }
+
+    .logoContainer img{
+        max-width: 150px;
+        height: auto;
+    }
+    
 }
