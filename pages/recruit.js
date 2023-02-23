@@ -25,5 +25,8 @@ export default function Recruit({pages, screenSize, windowWidth, positions}){
         <h2>We are recruiting!</h2>
         {positions.map(position => <JobPost key={position.id} position={position}/>)}
       </div>
+      <div>
+        <button className={styles.button}><a href="https://umsu.unimelb.edu.au/buddy-up/clubs/clubs-listing/join/mtech/">Become a member!</a></button>
+      </div>
     </Layout>
 }

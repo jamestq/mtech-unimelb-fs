@@ -6,3 +6,18 @@
     animation-name: fadein;
     animation-duration: var(--animation-duration-default);
 }
+
+.button{
+    padding: 1.5em;
+    text-transform: uppercase;
+    color: inherit;
+    font-weight: bold;
+    background-color: var(--bg-color-1);
+    border-radius: 2%;
+    border: none;
+}
+
+.button:hover{
+    color: var(--bg-color-1);
+    background-color: var(--font-color-main);
+}
