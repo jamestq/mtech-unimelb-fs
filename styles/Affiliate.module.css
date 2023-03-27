@@ -28,7 +28,6 @@
     max-height: 150px;
     width: auto;
     background-color: white;
-    border-radius: 2%;
 }
 
 @media screen and (max-width: 1200px) {
