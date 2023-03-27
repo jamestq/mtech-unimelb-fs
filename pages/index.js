@@ -7,6 +7,7 @@ import Presentation from '../components/presentation'
 import Sponsors from '../components/sponsors'
 import connectIcon from '../assets/icons/connect.svg';
 import project from '../assets/icons/project.svg'
+import Affilation from '../components/affiliate'
 
 const bannerContent = {
   title: "Melbourne Technology Consulting Club",
@@ -41,6 +42,7 @@ export default function Home({pages, screenSize, windowWidth}) {
       </Head>
       <Banner content={bannerContent}/>
       <Presentation content={missionStatement}/>
+      <Affilation/>
       <Sponsors/>
       <Link href={pages["Our Team"]} className={styles.link}>
           Learn More

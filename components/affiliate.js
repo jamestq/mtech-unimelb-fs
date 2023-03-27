@@ -1,23 +1,18 @@
-import styles from '../styles/Sponsors.module.css'
+import styles from '../styles/Affiliate.module.css'
 import Image from 'next/image';
 
-import eyLogo from '../assets/ey.png';
-import qrLogo from '../assets/quickrelease.png';
+import umsuLogo from '../assets/umsu.png';
 
 const sponsors = [
     {
-        title: "EY",
-        image: eyLogo,
-    },
-    {
-        title: "Quick Release",
-        image: qrLogo,
-    },
+        title: "UMSU",
+        image: umsuLogo
+    }
 ]
 
-export default function Sponsors(){
+export default function Affilation(){
     return <div className={styles.container}>
-        <h1>Our Sponsors</h1>
+        <h1>University Affiliations</h1>
         <div className={styles.sponsorContainer}>
             {
                 sponsors.map(sponsor => {
